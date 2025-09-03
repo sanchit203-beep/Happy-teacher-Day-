@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Teachers' Day - Taiyaba Ma'am</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background: #ff6f61;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .content {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #ff6f61;
+    }
+    .puzzle {
+      margin: 20px auto;
+      padding: 15px;
+      background: #fff3cd;
+      border: 2px dashed #ff6f61;
+      border-radius: 15px;
+      max-width: 500px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .puzzle:hover {
+      transform: scale(1.05);
+    }
+    .hidden {
+      display: none;
+    }
+    footer {
+      margin: 30px 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>🌸 Happy Teachers' Day Taiyaba Ma'am 🌸</header>
+  <div class="content">
+    <div class="card">
+      <h2>💖 A Special Message</h2>
+      <p>Dear Taiyaba Ma’am, you make Biology not just a subject, but a storybook full of wonder 🌱🧬.  
+      With your guidance, even the toughest chapters feel like friendly tales. 🌸</p>
+    </div>
+
+    <div class="card">
+      <h2>🧩 Cute Biology Puzzle</h2>
+      <div class="puzzle" onclick="revealPuzzle(1)">Swipe me 👉 to reveal something...</div>
+      <img id="puzzle1" class="hidden" src="https://i.ibb.co/6N0pH8F/cute-biology.jpg" alt="Cute Bio" width="200"/>
+
+      <div class="puzzle" onclick="revealPuzzle(2)">Swipe me 👉 for another surprise...</div>
+      <img id="puzzle2" class="hidden" src="https://i.ibb.co/VYbzpbg/biology-fun.jpg" alt="Bio Fun" width="200"/>
+    </div>
+
+    <div class="card">
+      <h2>🌸 Shayari from the Whole Class 🌸</h2>
+      <p><i>"Book ke har page mein aapka charm 💫,<br>
+      Har line lagti hai sweet sa warm 🌷,<br>
+      Pyaar se padhaana, yehi hai aapka style 💖,<br>
+      Taiyaba Ma’am, you make school worthwhile 🌈"</i></p>
+      <p>— With love from all of us 💕</p>
+    </div>
+  </div>
+
+  <footer>✨ Thank You Ma’am for everything ✨</footer>
+
+  <script>
+    function revealPuzzle(num) {
+      const img = document.getElementById("puzzle" + num);
+      img.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
